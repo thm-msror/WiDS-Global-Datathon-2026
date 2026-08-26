@@ -1,6 +1,6 @@
 # WiDS Datathon 2026 - Wildfire Time-to-Threat Survival Modeling
 
-Predicting wildfire time-to-threat probabilities at 12h, 24h, 48h, and 72h horizons using survival analysis and gradient boosting ensembles. Built for the [WiDS Worldwide Global Datathon 2026](https://www.kaggle.com/competitions/widsdatathon2026) on Kaggle.
+Predicting wildfire time-to-threat probabilities at 12h, 24h, 48h, and 72h horizons using survival analysis and gradient boosting ensembles. Built for the [WiDS Worldwide Global Datathon 2026](https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26/leaderboard) on Kaggle.
 
 ## Problem Statement
 
@@ -42,17 +42,17 @@ requirements.txt  Python dependencies
 
 ### Model Evolution (core/)
 
-| Script | Approach | Key Change |
-|--------|----------|------------|
-| `pure_physics_v5` | Physics-constrained survival | Baseline with domain features |
-| `calibrated_physics_v10` | + Isotonic calibration | Improved probability estimates |
-| `absolute_ensemble_v14` | Multi-model ensemble | Combined XGB + RSF + CPH |
-| `complete_v59` | Optuna + SHAP pipeline | Automated tuning, feature selection |
-| `restoration_masterpiece_v62` | Refined ensemble | First strong Kaggle submission |
-| `firewall_sniper_v69` | Specialist sub-models | Per-horizon expert models |
-| `specialist_stack_v77` | Stacked specialists | Meta-learner over specialists |
-| `ultimate_honest_v78` | **Best submission** | 50-seed bagged XGB, isotonic cal |
-| `v81_honest_50seed` | Final iteration | Production-grade 50-seed version |
+| Script                        | Approach                     | Key Change                          |
+| ----------------------------- | ---------------------------- | ----------------------------------- |
+| `pure_physics_v5`             | Physics-constrained survival | Baseline with domain features       |
+| `calibrated_physics_v10`      | + Isotonic calibration       | Improved probability estimates      |
+| `absolute_ensemble_v14`       | Multi-model ensemble         | Combined XGB + RSF + CPH            |
+| `complete_v59`                | Optuna + SHAP pipeline       | Automated tuning, feature selection |
+| `restoration_masterpiece_v62` | Refined ensemble             | First strong Kaggle submission      |
+| `firewall_sniper_v69`         | Specialist sub-models        | Per-horizon expert models           |
+| `specialist_stack_v77`        | Stacked specialists          | Meta-learner over specialists       |
+| `ultimate_honest_v78`         | **Best submission**          | 50-seed bagged XGB, isotonic cal    |
+| `v81_honest_50seed`           | Final iteration              | Production-grade 50-seed version    |
 
 ## Quick Start
 
