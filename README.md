@@ -1,4 +1,4 @@
-# WiDS Datathon 2026 -- Wildfire Time-to-Threat Survival Modeling
+# WiDS Datathon 2026 - Wildfire Time-to-Threat Survival Modeling
 
 Predicting wildfire time-to-threat probabilities at 12h, 24h, 48h, and 72h horizons using survival analysis and gradient boosting ensembles. Built for the [WiDS Worldwide Global Datathon 2026](https://www.kaggle.com/competitions/widsdatathon2026) on Kaggle.
 
@@ -69,7 +69,3 @@ python core/ultimate_honest_v78.py
 ## Tech Stack
 
 Python | XGBoost | scikit-survival | lifelines | scikit-learn | Optuna | SHAP | LIME | pandas | NumPy | matplotlib | seaborn
-
-## Author
-
-**Tehreem Masroor**
